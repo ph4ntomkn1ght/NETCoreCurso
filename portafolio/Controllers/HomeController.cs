@@ -8,10 +8,12 @@ namespace portafolio.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly RepositorioProyectos repProy;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,RepositorioProyectos repProy)
         {
             _logger = logger;
+            this.repProy = repProy;
         }
 
         public IActionResult Index()
@@ -22,8 +24,7 @@ namespace portafolio.Controllers
             //    nombre = "Ramon Escamilla Aguilar",
             //    Edad = 15
             //};
-            ViewBag.Nombre = "Ramon Escamilla";//Usamos el viewbag para mandar la informacion
-            var repProy = new RepositorioProyectos();
+            
             var proyectos = repProy.ObtenerProyectos().Take(3).ToList();
             var modelo = new HomeIndexViewModel() { proyectos = proyectos };
             return View(modelo);
