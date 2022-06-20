@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using portafolio.Models;
+using portafolio.Servicios;
 using System.Diagnostics;
 
 namespace portafolio.Controllers
@@ -22,38 +23,12 @@ namespace portafolio.Controllers
             //    Edad = 15
             //};
             ViewBag.Nombre = "Ramon Escamilla";//Usamos el viewbag para mandar la informacion
-            var proyectos = ObtenerProyectos().Take(3).ToList();
+            var repProy = new RepositorioProyectos();
+            var proyectos = repProy.ObtenerProyectos().Take(3).ToList();
             var modelo = new HomeIndexViewModel() { proyectos = proyectos };
             return View(modelo);
         }
-        private List<Proyecto> ObtenerProyectos()
-        {
-            return new List<Proyecto>()
-            {
-                new Proyecto
-                {
-                    Titulo = "Amazon",
-                    Descripcion = "E-Commerce realizado en ASP.NET Core",
-                    Link ="https://amazon.com",
-                    ImagenURL ="/img/amazon.PNG"
-                },
-                new Proyecto
-                {
-                    Titulo = "Google",
-                    Descripcion = "Buscador realizado en ASP.NET Core",
-                    Link ="https://google.com",
-                    ImagenURL ="/img/reddit.PNG"
-                },
-                new Proyecto
-                {
-                    Titulo = "Youtube",
-                    Descripcion = "Reproductor de videos realizado en ASP.NET Core",
-                    Link ="https://youtube.com",
-                    ImagenURL ="/img/steam.PNG"
-                }
-
-            };
-        }
+        
         public IActionResult Privacy()
         {
             return View("Privacy","Soy Franco Escamilla");//usamos un modelo fuertemente tipado
