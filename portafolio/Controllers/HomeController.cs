@@ -8,12 +8,18 @@ namespace portafolio.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly RepositorioProyectos repProy;
+        private readonly IRepositorioProyectos repProy;
+        private readonly ServicioDelimitado servicioDelimitado;
+        private readonly ServicioTransitorio servicioTransitorio;
+        private readonly ServicioUnico servicioUnico;
 
-        public HomeController(ILogger<HomeController> logger,RepositorioProyectos repProy)
+        public HomeController(ILogger<HomeController> logger,IRepositorioProyectos repProy,ServicioDelimitado servicioDelimitado,ServicioTransitorio servicioTransitorio,ServicioUnico servicioUnico)
         {
             _logger = logger;
             this.repProy = repProy;
+            this.servicioDelimitado = servicioDelimitado;
+            this.servicioTransitorio = servicioTransitorio;
+            this.servicioUnico = servicioUnico;
         }
 
         public IActionResult Index()
@@ -26,7 +32,14 @@ namespace portafolio.Controllers
             //};
             
             var proyectos = repProy.ObtenerProyectos().Take(3).ToList();
-            var modelo = new HomeIndexViewModel() { proyectos = proyectos };
+            var guidViewModel = new EjemploGUIDViewModel() {
+                Delimitado = servicioDelimitado.ObtenerGuid,
+                Transitorio = servicioTransitorio.ObtenerGuid,
+                Unico = servicioUnico.ObtenerGuid
+            };
+            var modelo = new HomeIndexViewModel() { proyectos = proyectos,
+                EjemploGUID_1 = guidViewModel
+            };
             return View(modelo);
         }
         
