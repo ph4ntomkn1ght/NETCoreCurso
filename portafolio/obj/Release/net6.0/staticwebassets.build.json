@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lRmtMLTf906sRaukpQTDb9DeA3NBKwPkmh59v4LPb5A=",
+  "Hash": "YX6fv7XWnbEO3zuIwwHl5vC38n2qVC2WEzIBVxcDc34=",
   "Source": "portafolio",
   "BasePath": "_content/portafolio",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\img\\amazon.PNG",
+      "SourceId": "portafolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\",
+      "BasePath": "_content/portafolio",
+      "RelativePath": "img/amazon.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\amazon.PNG"
+    },
+    {
       "Identity": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\img\\dotnet-imagen-2.png",
       "SourceId": "portafolio",
       "SourceType": "Discovered",
@@ -119,6 +136,40 @@
       "OriginalItemSpec": "wwwroot\\img\\Harry-potter-ficcion.jpg"
     },
     {
+      "Identity": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\img\\nyt.PNG",
+      "SourceId": "portafolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\",
+      "BasePath": "_content/portafolio",
+      "RelativePath": "img/nyt.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\nyt.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\img\\reddit.PNG",
+      "SourceId": "portafolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\",
+      "BasePath": "_content/portafolio",
+      "RelativePath": "img/reddit.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\reddit.PNG"
+    },
+    {
       "Identity": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\img\\retrato.jpg",
       "SourceId": "portafolio",
       "SourceType": "Discovered",
@@ -134,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\retrato.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\img\\steam.PNG",
+      "SourceId": "portafolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\",
+      "BasePath": "_content/portafolio",
+      "RelativePath": "img/steam.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\steam.PNG"
     },
     {
       "Identity": "C:\\Users\\tecmoin\\source\\repos\\portafolio\\portafolio\\wwwroot\\js\\site.js",
