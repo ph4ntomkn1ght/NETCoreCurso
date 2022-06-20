@@ -1,0 +1,19 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Politica de Privacidad";
+}
+<h1>@ViewData["Title"]</h1>
+<h2>@Model</h2>
+
+@*Utilizar un listado de nombres con Razor *@
+@{
+    var nombres = new List<string>() { "Juan", "Roberto", "Julian", "Christopher", "Mateo" };
+
+}
+<ul>
+    @foreach(var nombre in nombres)
+    {
+        <li>@nombre</li>
+    }
+</ul>
+<p>Utiliza esta pagina para tu Politica de Privacidad.</p>
